@@ -114,7 +114,7 @@ header {
   width: inherit;
   padding-top: 100px;
   border-bottom: 1px solid dimgray;
-  background-image: url('/day_2_html/website_pertama/bali.jpg');
+  background-image: url('bali.jpg');
   filter: blur(1px);
   position: relative;
 }
