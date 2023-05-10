@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  background-color: #ffff;
+}
+
+/*
+Heading
+*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #839477;
+  color: #ffff;
+  padding: 20px 20px;
+  height: 80px;
+}
+
+.header-table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 15px;
+
+}
+
+.header-table td{
+  padding: 5px 15px;
+  border: 1px solid black;
+
+}
+
+.header-table td a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.header-table td:hover{
+  background-color: grey;
+}
+
+.header-left img {
+  max-width: 20% ;
+  height: auto;
+}
+
+/* lecturer */
+.lecturers{
+  padding: 50px 50px;
+  border-bottom: 1px solid dimgray;
+}
+.lecturers td{
+  padding-left: 50px;
+}
+.card {
+  /* border-radius: 50px; */
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 50px;
+  overflow: hidden;
+  width: 150px;
+  height: auto;
+  margin-left: 10px;
+  border: 1px solid dimgray;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.card-content p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+.card-content a {
+  display: block;
+  padding: 10px 15px;
+  background-color: #0077ff;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+/* Form Belajar */
+
+.body-form {
+  padding: 20px 20px;
+  justify-content: space-around; 
+  display: flex; 
+  margin-bottom: 100px;
+}
+.title{
+  height: 250px;
+  width: inherit;
+  padding-top: 100px;
+  border-bottom: 1px solid dimgray;
+  background-image: url('/day_2_html/website_pertama/bali.jpg');
+  filter: blur(1px);
+  position: relative;
+}
+.title h1{
+  text-align: center;
+}
+.myForm {
+  display: grid;
+  align-items: center;
+  grid-template-columns: [labels] auto [controls] 2fr;
+  grid-auto-flow: row;
+  grid-gap: 0.8em;
+  background: #eee;
+  padding: 1.2em;
+}
+.myForm > label {
+  grid-column: labels;
+  grid-row: auto;
+}
+.myForm > input,
+.myForm > textarea {
+  grid-column: controls;
+  grid-row: auto;
+  border: none;
+  padding: 1em;
+}
+
+.full-width {
+  grid-column: 1/3;
+  grid-row: auto;
+  border: none;
+  padding: 1em;
+  background-color: #839477;
+}
+
+/* data-right */
+.data-right {
+  grid-column: 1/2;
+  display: block;
+  padding: 5px 5px;
+  margin: 10px 10px;
+}
+
+.content-table {
+  border: #ccc 1px solid;
+}
+.content-table th {
+  background: #eaebec;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 5px 15px;
+  border-left: 1px solid #e0e0e0;
+}
+.content-table td {
+  padding: 5px 15px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  background: #fafafa;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fbfbfb),
+    to(#fafafa)
+  );
+  background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+}
+
+/* footer */
+.foot{
+  height: 50px;
+  width: auto;
+  padding: 30px;
+  text-align: right;
+  border-top: 1px solid dimgray;
+  background-color: #839477;
+}
+
+/* Gaya Header untuk Layar Mobile */
+@media only screen and (max-width: 767px) {
+  header {
+    height: auto;
+    padding: 20px;
+  }
+  .header-left{
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  .header-left img {
+    max-width: 20%;
+  }
+  .header-table{
+    flex-direction: column;
+  }
+  .header-table td{
+    display: inline-block;
+    border-bottom: 1px solid #ddd;
+    border: none;
+  }
+  
+  /* body */
+
+}
